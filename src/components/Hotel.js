@@ -1,21 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import data from '../Data.json'
 import Card from './Card';
-// import './Hotel.css';
 
 const Hotels = ({ selectedCity }) => {
-  const [displayedRows, setDisplayedRows] = useState(2); // Initially display 2 rows (6 cards)
+  const [displayedRows, setDisplayedRows] = useState(2); 
 
   useEffect(() => {
     setDisplayedRows(2);
   }, [selectedCity]);
 
   const handleShowMore = () => {
-    setDisplayedRows((prevRows) => prevRows + 1); // Show 1 more row (3 more cards) each time
+    setDisplayedRows((prevRows) => prevRows + 1); 
   };
 
   const filteredHotels = data.hotels.filter((hotel) => hotel.city === selectedCity);
-  const totalCardsToDisplay = displayedRows * 3; // Each row displays 3 cards
+  const totalCardsToDisplay = displayedRows * 3; 
 
   return (
     <div>
@@ -39,7 +38,7 @@ const Hotels = ({ selectedCity }) => {
       </div>
       <div style={{margin:'10px 0 30px 0'}}>
       {filteredHotels.length > totalCardsToDisplay && (
-        <button className='btn btn-primary' onClick={handleShowMore}>
+        <button className='btn btn-primary' style={{borderRadius:'20px'}} onClick={handleShowMore}>
           Show More
         </button>
       )}

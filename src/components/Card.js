@@ -6,9 +6,7 @@ const Card = (props) => {
     <div className='my-3'>
       <div className="card" style={{ borderRadius: '20px' }}>
         <div>
-        <Link to={`/property/${props.id}`}>
           <img src={props.url} height={250} className="card-img-top" alt="..." style={{ borderRadius: '30px', padding: '10px' }} />
-          </Link>
         </div>
         <div className="card-body">
           <h5 className="card-title">{props.name}</h5>
@@ -22,11 +20,11 @@ const Card = (props) => {
           <div style={{ height:'33px', display: 'flex', justifyContent: 'space-between', padding: '0 10px' }}>
             <p>${props.price} /month</p>
             <p>{props.city}</p>
-            <a href={props.url} target="blank" className="btn btn-sm btn-primary"
+            <Link to={props.url} target="blank" className="btn btn-sm btn-primary"
               style={{ borderRadius: '12px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
             >
               Read More
-            </a>
+            </Link>
           </div>
 
         </div>

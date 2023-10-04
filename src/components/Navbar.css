@@ -1,9 +1,31 @@
-.rounded-navbar {
-    border-radius: 50px; /* Adjust the radius as needed */
+/* .rounded-navbar {
+    border-radius: 50px; 
   }
   
   .rounded-item {
-    border-radius: 50px; /* Adjust the radius as needed */
-    margin: 0 5px; /* Adjust the margin as needed */
+    border-radius: 50px; 
+    margin: 0 5px;
+  } */
+  
+  .navbar-nav .nav-link {
+    border-radius: 20px;
+    padding: 10px 20px; 
+    margin: 0 5px;
+    /* transition: background-color 0.3s ease; */
+    width: 100px; 
+    height: 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: #d2c9c9; 
+  }
+  
+  .navbar-nav .nav-link.active {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
   
