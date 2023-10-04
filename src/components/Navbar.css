@@ -1,0 +1,9 @@
+.rounded-navbar {
+    border-radius: 50px; /* Adjust the radius as needed */
+  }
+  
+  .rounded-item {
+    border-radius: 50px; /* Adjust the radius as needed */
+    margin: 0 5px; /* Adjust the margin as needed */
+  }
+  
